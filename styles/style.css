@@ -136,6 +136,10 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
+.header__description {
+  font-weight: 700;
+}
+
 .main {
   display: grid;
   gap: var(--section-gap, 50px);
@@ -152,7 +156,7 @@
   color: var(--decor-color, #ff0070);
 }
 
-.section__content {
+.list {
   display: grid;
   align-content: start;
   gap: 20px;
@@ -168,7 +172,7 @@
   font-weight: 700;
 }
 
-.card__title_type_tip {
+.section-advices .card__title {
   font-weight: 400;
 }
 
@@ -205,11 +209,12 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .section__content {
+  .section-why .list,
+  .section-advices .list {
     grid-column: 2 / -1;
   }
 
-  .section__content_type_factors {
+  .section-causes .list {
     grid-column: 1 / -1;
   }
 
@@ -262,7 +267,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section__content_type_factors {
+  .section-causes .list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
